@@ -20,6 +20,19 @@ nav {
     grid-template-columns: 1fr 1fr;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr 1000px 1fr;
+}
+
+section {
+    grid-column: 2 / 3;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
 .home-button:hover {
     background-color: silver;
 }
@@ -41,6 +54,23 @@ nav {
 }
 
 .banner {
-    display: grid;
     justify-self: center;
+    background: url("https://www.w3schools.com/w3images/architect.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.projects-heading {
+    grid-column: 1 / -1;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
