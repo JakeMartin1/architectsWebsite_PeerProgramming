@@ -30,7 +30,7 @@
 
 
         <section class="projects">
-            <h2>Projects</h2>
+            <h2 clas="projects-heading">Projects</h2>
             <hr>
             <div class="photo-grid">
                 <div>
@@ -84,7 +84,7 @@
 
 
         <section class="about">
-            <h2>About</h2>
+            <h2 class="abou-heading">About</h2>
             <hr>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -97,10 +97,9 @@
                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
                 quis nostrud exercitation ullamco laboris nisi ut aliquip 
                 ex ea commodo consequat.
-
             </p>
             
-            <div>
+            <div class="contact-grid">
                 <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John Doe pic" loading="lazy">
                 <h2>John Doe</h2>
                 <!-- notes here -->
@@ -112,7 +111,7 @@
                 <a href="#">Contact</a>
             </div>
 
-            <div>
+            <div class="contact-grid">
                 <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane Doe pic" loading="lazy">
                 <h2>Jane Doe</h2>
                 <!-- notes here -->
@@ -124,7 +123,7 @@
                 <a href="#">Contact</a>
             </div>
 
-            <div>
+            <div class="contact-grid">
                 <img src="https://www.w3schools.com/w3images/team3.jpg" alt="mike ross pic" loading="lazy">
                 <h2>Mike Ross</h2>
                 <!-- notes here -->
@@ -136,7 +135,7 @@
                 <a href="#">Contact</a>
             </div>
 
-            <div>
+            <div class="contact-grid">
                 <img src="https://www.w3schools.com/w3images/team4.jpg" alt="dan star" loading="lazy">
                 <h2>Dan Star</h2>
                 <!-- notes here -->
@@ -153,11 +152,13 @@
             <h2>Contact</h2>
             <hr>
             <h3>Let's get in touch and talk about your next project.</h3>
-            <p>Name</p>
-            <p>Email</p>
-            <p>Subject</p>
-            <p>Comment</p>
-            <p>Send Message</p>            
+            <form>
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="text" placeholder="Email" name="Email" required>
+                <input type="text" placeholder="Subject" name="Subject" required>
+                <input type="text" placeholder="Comment" name="Comment" required>
+                <button type="submit">Send Message</button>
+            </form>            
         </section>
 
         <section class="footer-image">
@@ -166,7 +167,6 @@
 
         <footer>
             <p>Inspired by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a> built by Will & Jake</p>
-
         </footer>
     </main>
 

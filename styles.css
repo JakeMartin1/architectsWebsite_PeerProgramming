@@ -1,0 +1,25 @@
+* {margin: 0; padding: 0;}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: linen;
+    font-family: serif;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.home-button:hover {
+    background-color: silver;
+    font-size: 3rem;
+}
+
+.logo-home {
+   
+}
