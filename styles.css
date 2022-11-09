@@ -7,7 +7,7 @@ html {
 
 body {
     background-color: linen;
-    font-family: serif;
+    font-family: Verdana, serif;
 }
 
 a {
@@ -23,6 +23,7 @@ nav {
 main {
     display: grid;
     grid-template-columns: 1fr 1000px 1fr;
+    grid-template-rows: repeat(5, mincontent);
 }
 
 section {
@@ -33,19 +34,22 @@ img {
     width: 100%;
     object-fit: cover;
 }
-.home-button:hover {
+.logo-home:hover {
     background-color: silver;
 }
 
 .logo-home {
-    font-size: 3rem;
+    font-size: 2rem;
+    padding: 1rem;
 }
+
+
 
 .page-links {
     display: grid;
     justify-self: end;
     grid-template-columns: repeat(3, 1fr);
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -54,34 +58,102 @@ img {
 }
 
 .banner {
-    background-image: url("https://www.w3schools.com/w3images/architect.jpg");
+    grid-column: 1 / -1;
+    position: relative;
+    text-align: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    /* background-size: contain;
     max-height: 100px;
     padding: 50% 50%;
-    background-color: blue;
+    background-color: blue; */
     /* padding-right: 50%; */
+}
+
+h1, h2, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 150;
+}
+
+h1 {
+    position: absolute;
+    bottom: 50%;
+    top: 50%;
+    left: 40%;
+    right: 50%;
+    color: linen;
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    margin-top: 5rem;
+}
+
+hr {
+    border-color: rgba(150, 150, 150, .1);
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, .7);
+    color: linen;
+    padding: 1.5rem 2rem;
 }
 
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
 h3 {
     background-color: black;
     color: linen;
-    width: 30%;
-    height: 15%;
+    /* width: 30%;
+    height: 15%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+    padding: .7rem 1.3rem;
+    font-weight: 500;
+    letter-spacing: .01rem;
 }
 
 .projects-heading {
     grid-column: 1 / -1;
 }
 
+.about p {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+.contact-grid div h2 {
+    margin-top: 1rem ;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.contact-grid div p {
+    margin-top: 1rem ;
+    margin-bottom: 1rem;
+    font-weight: 200;
+}
+
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.contact p {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
 }
 
 .contact-input-grid {
@@ -95,16 +167,38 @@ h3 {
     margin: .5rem;
 }
 
-.photo {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+.contact-grid div div {
+    font-size: 1.5rem;
+    /* position: relative; */
+    text-align: center;
+    background-color: lightgray;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 
+.contact-grid div div:hover {
+    background-color: silver;
+}
+
+.photo img {width: 100%;}
+    .photo {
+    position: relative;
+    text-align: center;
+}
+
+
+
+
+
+
 footer {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     background-color: black;
     color: linen;
+    padding: 2.5rem;
 }
 
 footer a {
