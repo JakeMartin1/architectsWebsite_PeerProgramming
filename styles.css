@@ -31,7 +31,9 @@ section {
 
 img {
     width: 100%;
-    object-fit: cover;
+    /* object-fit: fill;
+    background-size: contain; */
+
 }
 .home-button:hover {
     background-color: silver;
@@ -56,8 +58,7 @@ img {
 .banner {
     background-image: url("https://www.w3schools.com/w3images/architect.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
-    max-height: 100px;
+    background-size: cover;
     padding: 50% 50%;
     background-color: blue;
     /* padding-right: 50%; */
@@ -69,10 +70,17 @@ img {
 }
 
 h3 {
+    text-align: center;
+    position: absolute;
+    top: 3%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    color: white;
     background-color: black;
-    color: linen;
-    width: 30%;
-    height: 15%;
+    box-sizing: content-box;
+
+
+    
 }
 
 .projects-heading {
@@ -97,7 +105,8 @@ h3 {
 
 .photo {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    position: relative;
+    size: 25%;
 }
 
 footer {
@@ -114,3 +123,63 @@ footer a {
 footer a:hover {
     background-color: silver;
 }
+.logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: x-large;
+}
+button {
+    position: center;
+}
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+body, html {
+    height: 100%;
+}
+
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+/* .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    max-height: min-content;
+    align-items: center;
+  }
+  .grid figure {
+    border: 2px solid red;
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+    display: flex; /* new */
+  /* }
+  .grid figure img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    object-fit: cover; /* new */
+  /* } */ */ */
